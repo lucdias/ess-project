@@ -4,7 +4,7 @@ Feature: Conclusão de uma dúvida
     I want to concluir uma dúvida já aberta no sistema
     So that a dúvida seja registrada como dúvida concluída
 
-Scenario: Concluindo de uma dúvida
+Scenario: Concluindo uma dúvida
 	Given Estou logado no sistema como professor 
     And estou em uma thread de uma dúvida
     When Concluo a dúvida
