@@ -16,4 +16,4 @@ Scenario: Alerta de baixa interação com uma dúvida
     Given Há uma dúvida no sistema sem interação há 6 dias
     When O sétimo dia se encerra
     Then Um alerta é enviado para o professor sobre a possibilidade de conclusão da dúvida
-
+    Then Um alerta é enviado para o aluno responsável pela dúvida sobre uma possível conclusão da sua dúvida
