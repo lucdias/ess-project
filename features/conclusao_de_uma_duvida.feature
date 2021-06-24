@@ -17,7 +17,7 @@ Scenario: Alerta de baixa interação com uma dúvida
     When O sétimo dia se encerra
     Then Um alerta é enviado para o professor sobre a possibilidade de conclusão da dúvida
     Then Um alerta é enviado para o aluno responsável pela dúvida sobre uma possível conclusão da sua dúvida
-    
+
 Scenario: Concluindo uma dúvida sem resposta
     Given Estou logado no sistema como professor
     And Estou numa thread de uma dúvida que não tem nenhuma resposta
@@ -33,5 +33,5 @@ Scenario: Desistência de conclusão uma dúvida sem resposta
     And Estou numa thread de uma dúvida que não tem nenhuma resposta
     When Concluo a dúvida
     Then Aparece uma mensagem perguntando se desejo realmente concluir esta dúvida sem resposta
-    When Eu nego a conclusão
-    Then Retorno a thread da dúvida que não tem resposta.
+    When Eu nego a conclusão da dúvida
+    Then Continuo na thread da dúvida que não tem resposta.
